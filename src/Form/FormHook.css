@@ -1,3 +1,43 @@
-body {
-  padding: 20px;
+/* start css */
+
+/* Add a blur effect to the form, change the width, add a shadow, and set rounded corners. */
+.formParent {
+  width: 500px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.1), -2px -2px 4px rgb(0, 0, 0, 0.1);
+  border-radius: 9px;
+  backdrop-filter: blur(9px);
 }
+
+/* Add a background image and change the height */
+main {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Change the width of the button and the margin */
+.formParent button {
+  width: 90%;
+  margin: 10px 0px;
+}
+
+/* Change the width and the distance between each container */
+.formParent div {
+  padding: 6px;
+  padding-bottom: 0px;
+  width: 90%;
+}
+
+/* Change the height of the field */
+.formParent input {
+  height: 40px;
+}
+
+/* Increase the transparency of the placeholder */
+.formParent input::placeholder {
+  opacity: 0.4;
+}
+
+/* end css */
