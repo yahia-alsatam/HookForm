@@ -6,10 +6,14 @@ import "./formHook.css";
 // Use the Zod library to add constraints
 const schema = z
   .object({
-    name: z.string().min(2, { message: "string less 2" }),
+    name: z
+      .string()
+      .min(2, { message: "The name is less than two letters long" }),
     email: z.string().email(),
-    password: z.string().min(8, { message: "password less 8" }),
-    confirmPassword: z.string().min(8, { message: "password less 8" }),
+    password: z
+      .string()
+      .min(8, { message: "The password is less than 8 characters" }),
+    confirmPassword: z.string(),
   })
 
   //   To validate that the password matches the confirm password using Zod, you can do it like this:
