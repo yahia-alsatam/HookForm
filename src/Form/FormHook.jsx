@@ -105,7 +105,7 @@ const FormHook = () => {
               confirmPassword
             </label>
             <input
-              type="confirmPassword"
+              type="password"
               className="form-control"
               id="confirmPassword"
               placeholder="Enter confirmPassword"
